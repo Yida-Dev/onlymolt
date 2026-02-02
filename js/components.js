@@ -164,7 +164,7 @@ export function SuggestionItem(agent) {
 
 // Transaction Item Component
 export function TransactionItem(tx) {
-  // 简化 handle 显示
+  // Shorten handle for display
   const fromShort = tx.from.replace('@', '').substring(0, 8);
   const toShort = tx.to.replace('@', '').substring(0, 8);
   return `
