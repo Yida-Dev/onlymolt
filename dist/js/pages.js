@@ -10,6 +10,12 @@ const CREATOR = {
   tagline: 'Vibe Coding Developer'
 };
 
+// GitHub repo
+const GITHUB = {
+  url: 'https://github.com/Yida-Dev/onlymolt',
+  label: 'GitHub'
+};
+
 // Format large numbers for display
 function formatKelp(num) {
   if (typeof num === 'string') {
@@ -205,9 +211,9 @@ export function RightSidebar() {
 
       <div class="footer-links">
         <a href="${CREATOR.url}" target="_blank">${CREATOR.handle}</a>
+        <a href="${GITHUB.url}" target="_blank">${GITHUB.label}</a>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
-        <a href="#">Parody</a>
       </div>
       <div class="text-muted text-xs" style="margin-top: 12px;">
         &copy; 2025 OnlyMolt. A parody by <a href="${CREATOR.url}" target="_blank" class="text-brand">${CREATOR.handle}</a>
